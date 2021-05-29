@@ -6,7 +6,19 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+  },
+  {
+    path: 'mapa',
+    loadChildren: () => import('../mapa/mapa.module').then(m => m.MapaPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'percursos',
+    loadChildren: () => import('../percursos/percursos.module').then(m => m.PercursosPageModule)
+  },
 ];
 
 @NgModule({

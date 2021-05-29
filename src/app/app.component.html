@@ -1,3 +1,22 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+  <ion-toolbar>
+    <ion-title>TravelDiary</ion-title>
+  </ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="mapa">
+        <ion-label>Mapa</ion-label>
+        <ion-icon name="map"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <ion-label>Perfil</ion-label>
+        <ion-icon name="person"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="percursos">
+        <ion-label>Percursos</ion-label>
+        <ion-icon name="flag"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-app>
