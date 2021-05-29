@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'pontosdeinteresse',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'criarpercursos',
     loadChildren: () => import('./criarpercursos/criarpercursos.module').then( m => m.CriarpercursosPageModule)
+  },
+  {
+    path: 'pontosdeinteresse',
+    loadChildren: () => import('./pontosdeinteresse/pontosdeinteresse.module').then( m => m.PontosdeinteressePageModule)
   },
 ];
 
