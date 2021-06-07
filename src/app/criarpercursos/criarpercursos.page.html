@@ -7,12 +7,14 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size="7">
-        <ion-label>Criar Percurso</ion-label>
+      <ion-col size="8">
+        <ion-item>
+          <ion-label>Criar Percurso</ion-label>
+        </ion-item> 
       </ion-col>
-      <ion-col size="5">
-        <ion-item href="percursos">
-          Continuar
+      <ion-col size="4">
+        <ion-item (click)="criarPercurso()">
+          CONCLUIR
         </ion-item>
       </ion-col>
     </ion-row>
@@ -21,14 +23,7 @@
         <div>
         </div>
       </ion-col>
-      <ion-col size="10">
-        <div>
-          <ion-item>
-            <ion-label position="floating">Inserir partida</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
-        </div>
-      </ion-col>
+      <ion-col size="10"></ion-col>
       <ion-col>
         <div>
         </div>
@@ -53,9 +48,11 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <a href="pontosdeinteresse">
-        <img src="../../assets/img/mapa.png" href="pontosdeinteresse"/>
-      </a>
+      <ion-col></ion-col>
+      <ion-col size="10">
+        <img src="../../assets/img/mapa.png" (click)="criarPonto()"/>
+      </ion-col>
+      <ion-col></ion-col> 
     </ion-row>
   </ion-grid>
 </ion-content>

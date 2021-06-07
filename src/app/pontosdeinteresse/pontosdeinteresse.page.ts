@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-pontosdeinteresse',
   templateUrl: './pontosdeinteresse.page.html',
   styleUrls: ['./pontosdeinteresse.page.scss'],
 })
-export class PontosdeinteressePage implements OnInit {
+export class PontosdeinteressePage{
 
-  constructor() { }
+  constructor(private router: Router) {
+  }
 
-  ngOnInit() {
+  public voltar(){
+    this.router.navigate(["criarpercursos"]);
   }
 
 }
